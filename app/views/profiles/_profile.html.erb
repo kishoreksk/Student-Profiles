@@ -1,0 +1,63 @@
+<div class="flex " id="<%= dom_id profile %>">
+
+  <div class="flex space-x-16 pr-16 ">
+    <p class="my-5 w-32 ">
+      <strong class="block font-medium mb-2 text-xl font-semibold">Id</strong>
+      <%= profile.id %>
+    </p>
+
+    <p class="my-5 w-32">
+      <strong class="block font-medium mb-2 text-xl font-semibold" >Name</strong>
+      <%= profile.name %>
+    </p>
+
+    <p class="my-5 w-32">
+      <strong class="block font-medium mb-2 text-xl font-semibold">Age</strong>
+      <%= profile.age %>
+    </p>
+
+    <p class="my-5 w-32 ">
+      <strong class="block font-medium mb-2 text-xl font-semibold ">Country</strong>
+      <%= profile.country %>
+    </p>
+
+  </div>
+
+  <div>
+  </div>
+
+  <div class="flex  space-x-4">
+    <% if action_name != "show" %>
+      <div class=" mt-10">
+        <%= link_to "Show this profile", profile, class: "rounded-lg  font-bold bg-blue-500  p-2 " %>
+      </div>
+
+      <div class="mt-10">
+        <%= link_to 'Edit this profile', edit_profile_path(profile), class: "rounded-lg p-2  bg-blue-500  font-bold" %>
+
+
+      </div>
+
+    <% end %>
+
+  </div>
+
+</div>
+
+
+
+<!--<div class="flex ">-->
+  <%# if action_name != "show" %>
+<!--    <div>-->
+      <%#= link_to "Show this profile", profile, class: "rounded-lg  font-bold bg-gray-100  p-2 " %>
+<!--    </div>-->
+
+<!--    <div>-->
+      <%#= link_to 'Edit this profile', edit_profile_path(profile), class: "rounded-lg p-2  bg-gray-100  font-bold" %>
+
+
+<!--    </div>-->
+
+  <%# end %>
+
+<!--</div>-->

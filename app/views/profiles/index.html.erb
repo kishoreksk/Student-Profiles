@@ -1,0 +1,53 @@
+<div class="min-h-screen flex items-center justify-center mx-auto">
+  <div class="relative w-max">
+
+    <div class="absolute -right-5 -bottom-5 bg-sky-600 h-full w-full rounded-xl "></div>
+    <div class="relative bg-gray-800  text-gray-50 rounded-xl p-8 space-y-8">
+
+
+
+      <div>
+        <% if notice.present? %>
+          <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+        <% end %>
+
+      </div>
+
+
+      <div class=" flex font-bold text-4xl inline-block justify-center items-center">
+        <div>Profiles</div>
+      </div>
+
+
+      <div class="h-3 w-128 bg-sky-600"> </div>
+
+
+    <div>
+      <%= link_to 'New profile', new_profile_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium w-32" %>
+    </div>
+
+
+    <div> <%= render @profiles %></div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<!--<div class="w-full">-->
+
+
+
+
+<!--  <div class="flex justify-between items-center">-->
+<!--    <h1 class="font-bold text-2xl">Profiles</h1>-->
+<!--  </div>-->
+
+<!--  <div id="profiles" class="min-w-full">-->
+
+<!--  </div>-->
+<!--</div>-->
